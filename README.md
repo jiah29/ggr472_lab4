@@ -3,7 +3,7 @@
 This repository contains the code for GGR472 Lab 4 (Winter 2024) created by Jia Hao Choo.
 The purpose of this lab is to incorporate GIS analysis into web maps using Turf.js.
 
-The web map can be accessed [here](https://jiahao29.github.io/ggr472_lab4/).
+The web map can be accessed [here](https://jiah29.github.io/ggr472_lab4/).
 
 ## About the Web Map
 
