@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GGR472 Lab 4</title>
-    <!-- mapbox API -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+    <!-- Mapbox API -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Turf.js -->
-    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
-</head>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <!-- MAP CONTAINER -->
-    <div id='map' class='map'></div>
+    <div id="map" class="map"></div>
 
+    <!-- MAP CONTROL PANEL -->
+    <div id="control">
+      <!-- Checkbox to toggle on/off hexbin layer -->
+      <input
+        type="checkbox"
+        id="toggleHexbin"
+        name="toggleHexbin"
+        value="toggleHexbin"
+        onclick="toggleHexbin()"
+        checked
+      />
+      <label for="toggleHexbin">Show Hexbin Grids</label>
+      <!-- Checkbox to toggle on/off point layer-->
+      <input
+        type="checkbox"
+        id="togglePoint"
+        name="togglePoint"
+        value="togglePoint"
+        onclick="togglePoint()"
+      />
+      <label for="togglePoint">Show Collision Points</label>
+    </div>
+
+    <!-- LEGEND -->
+    <div id="legend"></div>
+
+    <!-- Custom JS script -->
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>

@@ -1,8 +1,27 @@
 .map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#control {
+  position: absolute;
+  background-color: lavender;
+  border: solid 1px #333333;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#legend {
+  position: absolute;
+  /* put it at the bottom left corner */
+  bottom: 30px;
+  left: 20px;
+  background-color: white;
+  border: solid 1px #333333;
+  border-radius: 5px;
+  padding: 10px;
 }
