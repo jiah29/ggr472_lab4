@@ -1,23 +1,40 @@
 # GGR472 Lab 4: Incorporating GIS analysis into web maps using Turf.js
- 
-This repository contains the starter code required to complete Lab 4. The lab is designed to help you learn how to perform spatial analysis and visualize outputs using the [Turf.js](https://turfjs.org/) and [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/) libraries.
 
+This repository contains the code for GGR472 Lab 4 (Winter 2024) created by Jia Hao Choo.
+The purpose of this lab is to incorporate GIS analysis into web maps using Turf.js.
 
-## Repository Contents
-- `data/pedcyc_collision_06-21.geojson`: Data file containing point locations of road collisions involving pedestrian and cyclists between 2006 and 2021 in Toronto 
-- `instructions/GGR472_Lab4`: Instructions document explaining steps required to complete the lab
-- `index.html`: HTML file to render the map
-- `style.css`: CSS file for positioning the map interface
-- `script.js`: JavaScript file template to be updated to include code that creates and visualizes and hexgrid map based on the collision data
-   
+The web map can be accessed [here](https://jiahaoc.github.io/ggr472_lab4/).
 
-## Getting started
+## Map Analysis
 
-To get started with the lab:
+The primary analysis of the web map is to create a hexagon grids for
+collision points in the city of Toronto. The hexagon grids are created from
+a bounding box of the collision points, and each heaxgon grid contains the number
+of collision points that fall within the grid, which are collected from the
+collision points dataset.
 
-1. Clone this repository to your local machine
-2. Update the public access token and basemap in `script.js`
-3. Open `index.html` in a web browser to view the map
-4. Create a new online repository containing your own files
-2. Work through the `instructions/GGR472_Lab4` instructions document to incrementally develop the `script.js` file
+## Map styling
 
+The hexagon grids are styling according to the number of collision points, using
+a step function to determine the color of the hexagon grids. Note that areas with
+no collision points are filtered out of the map.
+
+The collision points are styled using a simple circle marker, with the color being
+determined by the type of collision. If it is a non-fatal collision, the color is
+yellow, and if it is a fatal collision, the color is red.
+
+## Map Interactivities
+
+There is a control panel on the top left corner of the map where users can
+toggle on and off the hexagon grids, and the collision points layer. There is also
+a legend on the bottom right which will dynmically update based on which layer(s)
+are currently visible on the map.
+
+For the collision points layer, users can click on the circle marker to view the
+victim types of the collision (i.e., pedestrian or cyclists).
+
+For the hexagon grids, users can click on the hexagon grids to view the number of
+collision points within the grid.
+
+Note that if both layers are on, the collision points layer will be on top of the
+hexagon grids layer, hence any click events on the hexagon grids will be disabled.
