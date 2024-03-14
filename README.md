@@ -49,3 +49,5 @@ collision points within the grid.
 
 Note that if both layers are on, the collision points layer will be on top of the
 hexagon grids layer, hence any click events on the hexagon grids will be disabled.
+Cursor style changes when hovering over the hexagon grids and collision points also helps
+to indicate to the user which feature layer is clickable.
