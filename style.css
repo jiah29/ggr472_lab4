@@ -1,3 +1,10 @@
+/** ========================================================================= */
+/** This stylesheet is used for index.html                                    */
+/** Created by Jia Hao Choo for GGR472 Lab 4 (Winter 2024), modified from     */
+/** code template provided by the instructor                                  */
+/** ========================================================================= */
+
+/* Styling for the map */
 .map {
   position: absolute;
   top: 0;
@@ -7,6 +14,7 @@
   width: 100%;
 }
 
+/* Styling for the map layer controls panel */
 #control {
   position: absolute;
   background-color: lavender;
@@ -15,6 +23,7 @@
   padding: 5px;
 }
 
+/* Styling for the legend */
 #legend {
   position: absolute;
   /* put it at the bottom left corner */

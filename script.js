@@ -1,6 +1,8 @@
-/*--------------------------------------------------------------------
-GGR472 LAB 4: Incorporating GIS Analysis into web maps using Turf.js 
---------------------------------------------------------------------*/
+// ============================================================================
+// This script is used for index.html for implemeting map interactivity & analysis.
+// Created by Jia Hao Choo for GGR472 Lab 4 (Winter 2024), modified from
+// code template provided by the instructor.
+// ============================================================================
 
 // Mapbox access token
 mapboxgl.accessToken =
