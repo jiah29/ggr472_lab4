@@ -13,7 +13,7 @@ a bounding box of the collision points, and each heaxgon grid contains the numbe
 of collision points that fall within the grid, which are collected from the
 collision points dataset.
 
-## Map styling
+## Map Styling
 
 The hexagon grids are styling according to the number of collision points, using
 a step function to determine the color of the hexagon grids. Note that areas with
@@ -23,7 +23,7 @@ The collision points are styled using a simple circle marker, with the color bei
 determined by the type of collision. If it is a non-fatal collision, the color is
 yellow, and if it is a fatal collision, the color is red.
 
-## Map Interactivities
+## Map Interactivity
 
 There is a control panel on the top left corner of the map where users can
 toggle on and off the hexagon grids, and the collision points layer. There is also
