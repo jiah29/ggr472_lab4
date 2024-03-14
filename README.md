@@ -3,7 +3,18 @@
 This repository contains the code for GGR472 Lab 4 (Winter 2024) created by Jia Hao Choo.
 The purpose of this lab is to incorporate GIS analysis into web maps using Turf.js.
 
-The web map can be accessed [here](https://jiahaoc.github.io/ggr472_lab4/).
+The web map can be accessed [here](https://jiahao29.github.io/ggr472_lab4/).
+
+## About the Web Map
+
+The web map serves the purpose of visualising the pedestrian/cyclists collision points in
+the city of Toronto. Particularly, it provides a hexagon grid visualisation of the collision
+points, which summarises the collision points within a certain area in the city of Toronto.
+This helps users to identify trends and patterns of high risk areas for pedestrian/cyclists
+in the city. The map contains two layers:
+
+1. Pedestrian/Cyclists Collision Points in the City of Toronto
+2. Hexagon grids for summarising collision points within a certain area in the City of Toronto
 
 ## Map Analysis
 
