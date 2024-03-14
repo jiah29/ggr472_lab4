@@ -14,7 +14,7 @@ const map = new mapboxgl.Map({
   zoom: 11, // starting zoom level
 });
 
-var collisionData; // empty variable to store the collision data
+var collisionData; // empty variable to store the collision data after fetching it
 
 // Fetch the collision data from the online repository
 // store the response in the collisionData variable aftr converting it to JSON format
@@ -25,6 +25,7 @@ fetch(
   .then((data) => (collisionData = data));
 
 // Global variable to store the maximum number of collisions in a hexagon
+// this is used in multiple functions, so it's declared globally
 var maxCollisions = 0;
 
 // When map is loaded
