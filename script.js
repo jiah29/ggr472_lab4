@@ -1,5 +1,6 @@
 // ============================================================================
-// This script is used for index.html for implemeting map interactivity & analysis.
+// This script contains code for map interactivity & analysis features
+// in Mapbox GL JS & Turf.js (used in index.html)
 // Created by Jia Hao Choo for GGR472 Lab 4 (Winter 2024), modified from
 // code template provided by the instructor.
 // ============================================================================
